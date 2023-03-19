@@ -59,7 +59,7 @@ contract DustBoyNFT is ERC721Enumerable, IERC2981, ReentrancyGuard, Ownable {
 
     /** URI HANDLING **/
 
-    string private customBaseURI;
+    string public customBaseURI;
 
     function setBaseURI(string memory customBaseURI_) external onlyOwner {
         customBaseURI = customBaseURI_;
